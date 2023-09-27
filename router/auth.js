@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
 router.post('/register', async (req, res) => {
 
     try {
-        // console.log(req.body);
+        console.log(req.body);
         const { username, phone, email, password } = req.body;
         if (!username || !phone || !email || !password) {
             return res.status(201).send({ message: "plz fill the field properly" });

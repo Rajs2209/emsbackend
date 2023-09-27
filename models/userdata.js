@@ -15,6 +15,10 @@ const UserdataSchema = new mongoose.Schema({
     password: {
         type: String,
     },
+    isadmin: {
+        default: false,
+        type: Boolean,
+    },
     tokens: [
         {
             token: {
