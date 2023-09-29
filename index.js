@@ -7,7 +7,7 @@ app.use(express.json());
 const mongoose = require('mongoose')
 
 
-dotenv.config({ path: './config.env' });
+dotenv.config({ path: './.env' });
 require('./conn');
 app.use(require('./router/auth'));
 const middleware = (req, res, next) => {
